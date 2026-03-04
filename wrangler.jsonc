@@ -1,0 +1,22 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "paper-bot",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-09-27",
+	"compatibility_flags": [
+		"nodejs_compat",
+	],
+	"observability": {
+		"enabled": true
+	},
+	"triggers": {
+		"crons": ["0 8 * * *"]
+	},
+	"kv_namespaces": [
+		{
+			"binding": "PAPER_BOT_KV",
+			"id": "99eaaac140694a67a56e704f80b1c538",
+			"preview_id": "b5dac48c9fd64b04b43551aa96009eea"
+		}
+	]
+}
