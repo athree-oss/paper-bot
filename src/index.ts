@@ -133,5 +133,5 @@ async function fetchRandomArticle(): Promise<string> {
 	const authorMatches = [...entry.matchAll(/<name>([\s\S]*?)<\/name>/g)];
 	const authors = authorMatches.map(m => m[1].trim()).join(', ');
 
-	return `📄 *${title}*\n\n${summary}...\n\n👤 _${authors}_\n🏷 _${category}_\n🔗 ${link}`;
+	return `📄 **${title}**\n\n${summary}...\n\n👤 __${authors}__\n🏷 __${category}__\n🔗 ${link}`;
 }
